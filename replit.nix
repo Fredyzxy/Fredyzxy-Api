@@ -1,8 +1,10 @@
 { pkgs }: {
-	deps = [
-		pkgs.nodejs-18_x
-    pkgs.nodePackages.typescript-language-server
-    pkgs.yarn
-    pkgs.replitPackages.jest
+	deps = with pkgs; [
+		nodejs-16_x
+		nodePackages.typescript-language-server
+		nodePackages.node-pre-gyp
+		libpng
+		libjpeg
+		libuuid
 	];
 }
